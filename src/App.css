@@ -1,14 +1,15 @@
 .app-wrapper {
     display: grid;
-}
-.header {
-    grid-area: header;
+    grid-template-areas:
+    'header header header'
+    'nav content content';
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.nav {
-    grid-area: nav;
-}
-
-.content {
+.app-wrapper-content {
     grid-area: content;
+    background-color: cornflowerblue;
 }
